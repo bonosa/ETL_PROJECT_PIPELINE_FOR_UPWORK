@@ -1,4 +1,3 @@
-
 # Contractor ETL Demo
 **Author:** Saroj Bono | **Client:** Phillip Boykin (Upwork)
 
@@ -68,6 +67,10 @@ python ga_sos_full.py
 ---
 
 ## How It Works
+
+### Atlanta Scraper (2-step)
+1. Read permit record numbers from `Record20260309.csv`
+2. For each record number → navigate to Accela portal → press Enter → land on detail page → parse Licensed Professional section line by line → extract name, company, phone, address, license number, owner info
 
 ### Georgia SOS Scraper (Hybrid Aura API approach)
 1. **Phase 1 (Playwright):** Select Profession Type + License Type in Salesforce Lightning comboboxes → search → scrape results table across all pages → collect encrypted record IDs
