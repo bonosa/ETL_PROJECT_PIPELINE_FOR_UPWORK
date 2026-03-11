@@ -69,7 +69,21 @@ python ga_sos_full.py
 ## How It Works
 
 ### Atlanta Scraper (2-step)
-1. Read permit record numbers from `Record20260309.csv`
+Must explain where we get the imput. Csv from far Atlanta
+
+11:07 PM
+The input CSV comes from manually downloading it from the Atlanta permit portal. Here's how:
+
+Go to: https://aca-prod.accela.com/ATLANTA_GA/Cap/CapHome.aspx?module=Building&TabName=Building
+Click "Search All Records" checkbox
+Set date range: 01/01/2023 to today
+Select permit types: GEN CONT, FRAM, ARCH etc
+Click Search
+When results appear click Export to CSV button
+Save as Record20260309.csv to your Downloads folder
+That CSV is the input — it has 964 permit record numbers but no contractor details. The scraper then visits each permit's detail page to extract the contractor info.
+the rest is automated.
+1. Read permit record numbers from `Record20260309.csv`. WSe grt this csv manually by going to the accella portal 
 2. For each record number → navigate to Accela portal → press Enter → land on detail page → parse Licensed Professional section line by line → extract name, company, phone, address, license number, owner info
 
 ### Georgia SOS Scraper (Hybrid Aura API approach)
