@@ -1,0 +1,5 @@
+*.csv
+session.json
+aura_capture.json
+__pycache__/
+*.pyc
