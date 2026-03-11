@@ -1,5 +1,5 @@
 # ETL_PROJECT_PIPELINE_FOR_UPWORK
-1.Learned a lot in this  project
+Learned a lot in this  project
 
 2. Built a working Atlanta permit scraper(Atlanta_ETL_demo folder)
 
